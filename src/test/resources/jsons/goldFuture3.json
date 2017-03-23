@@ -1,0 +1,69 @@
+{
+"dataset":{
+	"id":28127599,
+	"dataset_code":"GCV2017",
+	"database_code":"CME",
+	"name":"Gold Futures, October 2017 (GCV2017)",
+	"description":"Historical CEC futures prices: Gold Futures, Contract Size: The contract quantity shall be 5 Megawatts Hours (MWH). Transaction sizes for trading in any contract month shall be restricted to whole number multiples of the number of off-peak hours in the contract month. The contract quantity is not adjusted to reflect the transition in and out of Daylight Savings Time. Each futures contract shall be valued at the contract quantity multiplied by the settlement price. Tick Size: $0.05",
+	"refreshed_at":"2017-03-04T01:12:12.623Z",
+	"newest_available_date":"2017-03-03",
+	"oldest_available_date":"2015-11-27",
+	"column_names":[
+		"Date",
+		"Open",
+		"High",
+		"Low",
+		"Last",
+		"Change",
+		"Settle",
+		"Volume",
+		"Previous Day Open Interest"
+		],
+	"frequency":"daily",
+	"type":"Time Series",
+	"premium":false,
+	"limit":3,
+	"transform":null,
+	"column_index":6,
+	"start_date":"2015-11-27",
+	"end_date":"2017-03-03",
+	"data":[
+		[
+			"2017-03-09",
+			1216.7,
+			1218.3,
+			1211,
+			1211.2,
+			6.2,
+			1212.8,
+			512,
+			4458
+		],
+		[
+			"2017-03-08",
+			1227.6,
+			1227.6,
+			1216.3,
+			1216.8,
+			6.7,
+			1219,
+			267,
+			4464
+		],
+		[
+			"2017-03-07",
+			1231.3,
+			1231.3,
+			1223.7,
+			1225.4,
+			9.4,
+			1225.7,
+			217,
+			4287
+		]
+	],
+	"collapse":null,
+	"order":null,
+	"database_id":5896
+	}
+}

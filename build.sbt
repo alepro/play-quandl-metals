@@ -1,12 +1,14 @@
 name := """play-quandl-metals"""
 
-version := "1.0"
+version := "0.1"
 
 scalaVersion := "2.11.7"
 
-// Change this to another test framework if you prefer
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+libraryDependencies ++= Seq(
+"com.typesafe.play" % "play_2.11" % "2.5.12",
+"org.scalatest" %% "scalatest" % "2.2.4" % "test",
+"org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test,
+"org.mockito" % "mockito-all" % "1.10.19" % Test
+)
 
-// Uncomment to use Akka
-//libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
-
+EclipseKeys.withSource := true

@@ -1,0 +1,26 @@
+{
+"dataset":{
+	"id":11304013,
+	"dataset_code":"SILVER",
+	"database_code":"LBMA",
+	"name":"Silver Price: London Fixing",
+	"description":"Silver Price: London Fixing. London Bullion Market Association (LBMA). Fixing levels are set per troy ounce.\nThe London Silver Fixing Companies set the prices for gold that are globally considered as the international standard for pricing of silver.\nThe Silver price in London is set once a day by three LBMA Market Makers who comprise the London Silver Market Fixing Limited (LSMFL).\nThe process starts with the announcement from the Chairman of the LSMFL to the other members of the LBMA Market Makers, then relayed to the dealing rooms where customers can express their interest as buyers or sellers and also the quantity they wish to trade. The silver fixing price is then set by collating bids and offers until the supply and demand are matched. At this point the price is announced as the 'Fixed' price for silver and all business is conducted on the basis of that price.",
+	"refreshed_at":"2017-03-10T16:40:54.181Z",
+	"newest_available_date":"2017-03-10",
+	"oldest_available_date":"1968-01-02",
+	"column_names":["Date","USD","GBP","EURO"],
+	"frequency":"daily",
+	"type":"Time Series",
+	"premium":false,
+	"limit":1,
+	"transform":null,
+	"column_index":null,
+	"start_date":"1968-01-02",
+	"end_date":"2017-03-10","data":[
+		["2017-03-10",16.89,13.9104,15.9219]
+	],
+	"collapse":null,
+	"order":null,
+	"database_id":139
+	}
+}
