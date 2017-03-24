@@ -1,5 +1,7 @@
 name := """play-quandl-metals"""
 
+organization := "alepro"
+
 version := "0.1"
 
 scalaVersion := "2.11.7"
