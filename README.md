@@ -5,16 +5,14 @@ Playframework module for Quandl metals prices. Get current and futures prices fo
 
 The first step is to include the module in your dependencies list in *build.sbt*:
 
-```
+```scala
 resolvers ++= Seq(
   Resolver.url("Play Quandl metals Repository", 
   	url("https://raw.github.com/alepro/play-quandl-metals/repos/"))(Resolver.ivyStylePatterns)
 )
-```
 
 .....
 
-```
 libraryDependencies ++= Seq(
 	"alepro" % "play-quandl-metals_2.11" % "0.1"
 )    
@@ -26,7 +24,7 @@ libraryDependencies ++= Seq(
 On second step lets integrate the module into playframework application.
 Add the following to *application.conf*:
 
-```
+```scala
 play.modules {
    enabled += alepro.play.quandl.metals.QuandlMetalsModule
 }
@@ -34,7 +32,7 @@ play.modules {
 
 If you are going to call quandl with request API key make sense to add also:
 
-```
+```scala
 quandl.api.key = <your_quandl_API_key>
 ```
 
@@ -43,13 +41,12 @@ quandl.api.key = <your_quandl_API_key>
 
 Having integration in place we may start getting metal prices. For time being only silver and gold prices supported in *SilverService* and *GoldService* correspondingly. So add to your service:
 
-```
+```scala
 import alepro.play.quandl.metals.service.GoldService
 import alepro.play.quandl.metals.service.SilverService
-```
+
 .....
 
-```
 @Singleton
 class MyService @Inject() (goldService: GoldService, 
                            silverService: SilverService) {                                                     
@@ -58,7 +55,7 @@ class MyService @Inject() (goldService: GoldService,
 
 And finally to easely get latest gold price we may use:
 
-```
+```scala
 val dataset: Option[GoldDataset] = goldService.price
 val price: Option[BigDecimal] = 
      for {
@@ -70,7 +67,7 @@ val price: Option[BigDecimal] =
 
 For futures you may use something like:
 
-```
+```scala
 val futureData: Option[FutureDataset] = goldService.futurePrice(5, 2017)
 val price: Option[BigDecimal] = 
 	for {
