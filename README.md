@@ -73,7 +73,7 @@ For futures you may use something like:
 ```
 val futureData: Option[FutureDataset] = goldService.futurePrice(5, 2017)
 val price: Option[BigDecimal] = 
-for {
+	for {
   	  ds <- dataset;
   	  di <- ds.dataItems.headOption;
   	  price <- di.settle
